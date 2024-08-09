@@ -1,0 +1,28 @@
+60 03 d2 2c 00 29 11 40 24 00 1a 00 b1 e0 99 79 68 48 35 38 c1 78 d2 f8 24 00 1a 00 80 00 08 8e 00 00 00 00 00 00 00 13
+ This is the ipv6 header which is copied from Wireshark.
+ Discussion about above Ip is as given:
+
+
+1) Version (4 bits) : Indicates the IP version, which is IPv6. 
+Value 6
+
+2) Traffic class (8 bits) : Used for quality of service (QoS) and priority handling of the packet.
+ Value: 0 0
+
+3) Flow Label (20 bits) :Identifies the flow of packets that require special handling, useful for QoS. 
+Value: 3 d2 2c
+
+4) Payload Length (16 bits) : Specifies the length of the payload, including any extension headers, in bytes. 
+Value: 00 29
+
+5) Next Header (8 bits) :  Identifies the type of the next header. Here, 11 corresponds to the UDP protocol. 
+Value: 11
+
+6) Hop Limit (8 bits) : Similar to the TTL field in IPv4, it limits the number of hops the packet can traverse.
+ Value: 40
+
+7) Source Address (128 bits) : The IP address of the packet's originator. 
+Value: 24 00 1a 00 b1 e0 99 79 68 48 35 38 c1 78 d2 f8
+
+8) Destination Address (128 bits) : The IP address of the packet's intended recipient. 
+Value: 24 00 1a 00 80 00 08 8e 00 00 00 00 00 00 00 13
